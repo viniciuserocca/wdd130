@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root {
+    --primary-color: #274029;
+    --secondary-color: #C5C5BE;
+    --accent1-color: #CFCFC9;
+    --accent2-color: #315C2B;
+
+    --heading-font: "Russo One", sans-serif;
+    --paragraph-font: "roboto", sans-serif;
+
+    --nav-background-color: #CFCFC9;
+    --nav-link-color: #274029;
+    --nav-hover-link-color: #315C2B;
+    --nav-hover-background-color: #C5C5BE;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding-left: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 35px;
+    background: rgba(0, 0, 0, 0.50);
+    width: 100%
+}
+
+.hero article {
+    position: absolute;
+    color: white;
+    top: 180px;
+    right: 40px;
+    background: rgba(0, 0, 0, 0.50);
+    width: 92%
+}
+
+.hero article p {
+    padding: 15px;
+}
+
+.hero article img {
+    float: right;
+    width: 250px;
+    padding: 15px;
+}
+
+.social img {
+    width: 25px;
+}
+
+.social a {
+    text-decoration: none;
+}
