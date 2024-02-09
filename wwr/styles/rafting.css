@@ -54,17 +54,93 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
+h1 {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
 footer {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 120px 2fr 1fr;
     height: 75px;
     align-items: center;
     justify-items: right;
     background-color: var(--nav-background-color);
 }
 
+footer p {
+    grid-column: 2/3;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover {
+    color: var(--accent2-color);
+}
+
 figure figcaption {
     text-align: center;
+}
+
+section {
+    border-bottom: 1px solid #ccc;
+    padding: 2rem 0 2rem 0;
+}
+
+form {
+    display: grid;
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: var(--accent1-color);
+}
+
+form p {
+    text-align: left;
+    padding: 1.5rem 0 .5rem 0;
+}
+
+button {
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    width: 350px
+}
+
+button:hover {
+    background-color: var(--accent2-color);
+}
+
+label {
+    text-align: left;
+    padding: .5rem 0 .5rem 0;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    resize: none;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
+}
+
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
 }
 
 .hero {
@@ -72,6 +148,8 @@ figure figcaption {
     grid-template-rows: 100px 1fr;
     align-items: center;
     justify-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0 40px 0;
 }
 
 .hero img {
@@ -155,7 +233,8 @@ figure figcaption {
     grid-row: 2;
     gap: 25px;
     justify-items: center;
-    padding: 15px 0 15px 0;
+
+    padding: 45px 0 45px 0;
 }
 
 .history h2 {
@@ -172,7 +251,7 @@ figure figcaption {
     grid-row: 2;
     gap: 25px;
     justify-items: center;
-    padding: 15px 0 15px 0;
+    padding: 45px 0 45px 0;
 }
 
 .adventure h2 {
@@ -182,4 +261,72 @@ figure figcaption {
 .adventure img {
     width: 150px;
     height: auto;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: .5fr 1fr 1fr;
+    grid-gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+table td {
+    padding: .5rem;
+}
+
+.map {
+    grid-row: 1/4;
+    grid-column: 2/3;
+}
+
+.employee {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 2;
+    gap: 25px;
+    justify-items: center;
+    padding: 45px 0 45px 0;
+}
+
+.employee img {
+    width: 200px;
+}
+
+.employee h2 {
+    grid-column: 1/4;
+}
+
+.contact_form {
+    padding: 45px 0 45px 0;
+}
+
+.contact_form h2 {
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.contact_form h3 {
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.form-item1 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 6rem 1fr;
+    grid-gap: 1rem;
+}
+
+.form-item2 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5rem 4fr;
+}
+
+.form-item3 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5rem 4fr;
 }
